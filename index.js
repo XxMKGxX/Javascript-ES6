@@ -93,28 +93,29 @@ In order to stop this we can replace alert with console.log.
 
 // Example:
 
-function getMilk() {
-    alert("moveLeft")
-    alert("moveLeft")
-    alert("moveUp")
-    alert("moveUp")
-    alert("moveUp")
-    alert("moveUp")
-    alert("moveRight")
-    alert("moveRight")
-    alert("buyMilk")
-    alert("moveLeft")
-    alert("moveLeft")
-    alert("moveDown")
-    alert("moveDown")
-    alert("moveDown")
-    alert("moveDown")
-    alert("moveRight")
-    alert("moveRight")
-    alert("eneterHouse")
+function getMilk(bottles) {
+    console.log("moveLeft")
+    console.log("moveLeft")
+    console.log("moveUp")
+    console.log("moveUp")
+    console.log("moveUp")
+    console.log("moveUp")
+    console.log("moveRight")
+    console.log("moveRight")
+    var numberOfBottles = Math.floor(money / 1.5);
+    console.log("buy " + numberOfBottles + " bottles of Milk")
+    console.log("moveLeft")
+    console.log("moveLeft")
+    console.log("moveDown")
+    console.log("moveDown")
+    console.log("moveDown")
+    console.log("moveDown")
+    console.log("moveRight")
+    console.log("moveRight")
+    console.log("eneterHouse")
 }
-
-getMilk();
+// This helps us to input the number bottles and how much money will be spent.
+getMilk(2);
 
 /* 
   Karel Code
@@ -137,4 +138,52 @@ function main() {
     move();
 }
 
+*/
+
+//FUNCTIONS: PARAMETERS AND ARGUMENTS
+
+/* The contnent found inside the round brackests are known as inputs.
+for example when we state buy milk in the function,
+we can specify the number of bottles of milk required to be bought. 
+inside the brackets of the creating function we specify the name of the input which will be bottles.
+Then when we call the function, inside those brackets we specify the number of bottles. 
+// CHALLANGE: LIFE IN WEEKS.
+*/
+
+function lifeInWeeks(age) {
+
+    let timeLeft = 90 - age
+    let x = timeLeft * 365
+    let y = timeLeft * 52
+    let z = timeLeft * 12
+
+    console.log("You have " + x + " days, " + y + " weeks, and " + z + " months left.")
+}
+
+lifeInWeeks(18);
+
+// FUNCTIONS: OUTPUTS AND RETURN VALUES
+/*
+When it came to use the money input we were able to get the number of bottles required.
+In addition to receiving an input it can give out an output by using the return keyword.
+In this case we are giving out money modulo 1.5 (return money % 1.5) remember 1.5 being the cost of one bottle
+So in order for us to see the change, we would have to create a var called change and we console.log the result out.
+When just calling the function we will not get the output back because we have not included the return keyword.
+Calling the function we use the output and then put that output inside a var (change) in order for us to get the result.
+We put return just before we reach closing curly braces.
+EXAMPLE:
+
+return money % 1.5 (Thus giving us the change)
+
+var change = getMilk(5)
+console.log(change) ((Result being 0.5 or 50cents))
+
+More than one input can be used 
+
+// CHALLENGE: BMI CALCULATOR
+function bmiCalculator(weight, height) {
+    var bmi = weight / (height * height);
+    return bmi;
+}
+Check Documentation for Math.pow
 */
