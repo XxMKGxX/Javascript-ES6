@@ -185,5 +185,5 @@ function bmiCalculator(weight, height) {
     var bmi = weight / (height * height);
     return bmi;
 }
-Check Documentation for Math.pow
+Check Documentation for Math.pow, as well as Math.floor()
 */
