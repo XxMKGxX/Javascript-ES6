@@ -107,3 +107,38 @@ function isLeap(year) {
     }
 
 }
+
+// WORKING WITH JAVASCRIPT ARRAYS
+
+/*
+An Array is a collection of items that are related and can be stored in the same container.
+Syntax
+var name = ["string", one , "1"] (datatypes are put into the square brackets.)
+In order to retreive the data from the array, we use: var myName = name[1]
+** Square Brackets are normally used for a collection of data items.
+** They are used when creating arrays and when collecting data from arrays.
+*/
+// GuestList Example:
+var guestList = ["Conrad", "Akwesa", "Paida", "Godwin", "Dali"]
+guestList[0] // This will retrieve the name Conrad because code always starts at 0
+
+/*Arrays can also check to see if a certain data type is included in the array. i.e name.includes(one)
+If it is found inside, then it will return true.
+*/
+// GuestList Challenge.
+var name = prompt("What Is Your Name?");
+if (name.includes(["Conrad", "Kayuti", "Collin", "m'Diwa", "Joshua", "Althea", "Nokutenda"])) {
+    alert("Welcome to the party!")
+} else {
+    alert("Sorry, You're not on the list. Goodbye.")
+};
+
+//ADDING ELEMENTS AND INTERMIDIATE ARRAY TECHNIQUES
+
+/* There is a function that allows you to put extra data into an array without having to touch the array.
+It is know as push (name.push)
+When using this be aware that it can only push the data type at the end not at some random position.
+That is not all.
+You can also remove the last item in the array by using .pop
+
+*/
