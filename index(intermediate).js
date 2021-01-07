@@ -140,5 +140,26 @@ It is know as push (name.push)
 When using this be aware that it can only push the data type at the end not at some random position.
 That is not all.
 You can also remove the last item in the array by using .pop
+*/
+// FIZZBUZZ Challengevar output = [];
+var count = 1;
 
+function fizBuzz() {
+
+    if (count % 3 === 0 && count % 5 === 0) {
+        output.push("FizzBuzz");
+    } else if (count % 3 === 0) {
+        output.push("Fizz");
+    } else if (count % 5 === 0) {
+        output.push("Buzz");
+    } else {
+        output.push(count);
+    }
+    count++;
+    console.log(output)
+}
+/* 
+Keep in mind that the order of your if statements matter.
+If the first if statement is true it will skip the rest.
+**** Note **** When using % make sure that you equal it to 0 (3 % 3 === 0)
 */

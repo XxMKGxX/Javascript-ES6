@@ -1,3 +1,69 @@
+//Starting Code with alerts and prompts
+
+// In order to write 2 alerts but on different lines, press SHIFT + ENTER keys to o to the next line.
+/* Chrome has snippets for editing your code for example without having to press SHIFT and ENTER all the time to go to the next line of code. 
+--In javascript there are keywords that a browser can read. 
+--You cant just type in any word and it will work. 
+
+      Message
+        |
+        |
+alert("Hello"); --End
+  |
+  |
+function
+
+--Anything said inside the quotation marks are not going to affect the functionality of the code.
+
+--The Prompt displays a dialog with an optional message prompting the user to input some text.
+*/
+
+//Understand Variables and Data Types in Javascript.
+//--Data types.
+/*-- A string ("") is a data type.This tells the computer the functionality of that specific data and run it as text.
+--Numbers as well are data types and Boleans.
+--Booleans are data types that only give out a true or false result.
+--typeof is another data type which gives out the type of data type that is inside the round brackets.
+
+//--Variables
+-- Variables are a Keyword.
+--This helps in storing data. 
+-- When a user types in data from a prompt without the aid of a variable, the data is lost.
+--But when a variable is used, this stores the data and the recipient, that is me, will be able to see that data.
+--When changing the contents of a variable all we need to do is create another variable to take in the contents of the original variable.
+Example a=3; b=8; 
+Result: var c=a ; b=c; a=b;
+*/
+
+//Variable Naming In Javascript.
+/*-- When it comes to naming a variable, Javascript does not care if it is a weird name variable so long as it does not conflcit with the following:
+
+1. var is not allowed to be used as a variable name. e.g var var (this actually brings out an error before doing anything else.)
+2. a variable name cannot start with a number. But numbers can be used inside the name e.g my123
+3. The _ is the only symbol that can be used to write variable names. e.g name_one.
+4. Camel casing is encouraged to make reading easier. E.G myName (Capital N)
+5. You cannot have space in a variable name.
+*/
+
+// Working With Strings and Numbers.
+
+/*
+//Concatenation
+--This is the joining of strings without having to write 2 different lines of code.
+--This can also be used when combining variables. 
+--By doing this we reduce the number of lines of Code.
+*/
+
+//EXAMPLE:
+alert("Hello " + "World!") //The result being Hello World!
+
+//.length feature
+/*-- This feature is used to find out how many characters are found inside a certain string.
+e.g name.length = 6 
+-- The results are found inside the console. 
+
+*/
+
 // .slice function
 
 var message = prompt("Feel free to write up to 180 characters.")
