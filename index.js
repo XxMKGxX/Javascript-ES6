@@ -65,14 +65,19 @@ e.g name.length = 6
 */
 
 // .slice function
+/*-- When it comes to writing code, programmers always start from zero i.e var name = "Conrad";
+--Therefore name.slice(0,1) This will give us C since it is positioned at 0.
+-- 0,1 means position 0 all the way to but not including position 1.
 
-var message = prompt("Feel free to write up to 180 characters.")
+*/
+
+var message = prompt("Compose Your Tweet Here.")
 var messageCount = message.slice(0, 140)
 alert(messageCount)
 
-/* This allows the alert to
-        return the content written inside the propmt
-        for it to reach up 140 characters.*/
+/*-- This allows the alert to return the content written inside the propmt for it to reach up 140 characters.
+-- We can shorten the number of lines of code by writing this. 
+alert(prompt("Compose Your Tweet Here").slice(0,140))*/
 
 var messageCount = message.length
 var finale = 180 - messageCount
@@ -106,6 +111,8 @@ var cL = cappedLetter.toUpperCase();
 var uL = uncappedLetter.toLowerCase();
 alert("Hello, " + cL + uL);
 
+//Note that when using the uppercase and lowercase function: make sure to use variables in order for it to work.
+
 // Numbers
 
 /* Addition in Javascript is quite simple (just use the plus sign lol)
@@ -120,9 +127,9 @@ var e = 9 % 6
 /* BOMDAS is used in programming were we multiply or divide first before adding or subtracting
 EXAMPLE: var cost = 3 + 5 * 2 
 RESULT: 13 
-Brackets can be used to let the computer to start with the brackets before everything else.
+Brackets can be used to let the computer to start with the numbers found inside the brackets before everything else.
 */
-// CHALLANGE: Dog Human Calculator:
+// CHALLANGE: Dog Human Age Calculator:
 
 var dogAge = prompt("How old is your Dog?")
 var humanAge = (dogAge - 2) * 4 + 21
@@ -141,20 +148,17 @@ alert("Your Dog is " + humanAge + " years old in human years")
         This is known as Decrement.
         If you want to add more than just one, we use += 
         Example: x += 2 = 7 (x = x + 2 = 7)
+        The same can be done for multiplication and division.
 */
 // FUNCTIONS
 /* Functions allow us to create a series of instructions, package it into a block of code and give it a name.
- 
-
-With functions, once it has been called out, it will execute the code under the given name.
-Functions are similar with variables.
-In order to call the function we just need to use the name given to the function.
-i.e getMilk(); And this will allow it to be executed.
+--Similar to a variable, the difference is that the contents of that box are executed.
+-- This saves us time from having to write the code again and again.
+--In order to call the function we just need to use the name given to the function.
+--i.e getMilk(); And this will allow it to be executed.
 
 When it comes to alerts we do not want to be clicking the ok button all the time. 
 In order to stop this we can replace alert with console.log. 
-
-
 */
 
 // Example:
