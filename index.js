@@ -163,7 +163,7 @@ In order to stop this we can replace alert with console.log.
 
 // Example:
 
-function getMilk(bottles) {
+function getMilk(money) {
     console.log("moveLeft")
     console.log("moveLeft")
     console.log("moveUp")
@@ -185,7 +185,8 @@ function getMilk(bottles) {
     console.log("eneterHouse")
 }
 // This helps us to input the number bottles and how much money will be spent.
-getMilk(2);
+getMilk(5);
+//End result being 3 bottles of milk.
 
 /* 
   Karel Code
@@ -221,7 +222,7 @@ Then when we call the function, inside those brackets we specify the number of b
 */
 
 function lifeInWeeks(age) {
-
+    //The let keyword is an old version of the var keyword.
     let timeLeft = 90 - age
     let x = timeLeft * 365
     let y = timeLeft * 52
