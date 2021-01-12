@@ -2,7 +2,7 @@
 
 // Random Number Generation
 /* var n = Math.random()
-What this does is that it generates numbers random from 0 to 0.9999999999999999(16 decimal places)
+What this does is that it generates numbers random from 0 to but not including 1(0.9999999999999999(16 decimal places)) 
 It never reaches 1
 */
 
@@ -24,11 +24,16 @@ prompt("What is your name?");
 prompt("What is your crush's name?");
 var love = Math.random();
 love = Math.floor(love * 100) + 1
-alert("Your Love Score Is " + love)
+alert("Your Love Score Is " + love + "%")
 
 //Control Statements: Using If-Else Conditionals And Logic
 
-/*If:
+/*
+--When we want to have different outcomes in our code we use control flow. 
+--This is the controlling of the code. For example if the road is clear in front of us we go forward.
+--But if it is not we find an alternate route.
+--In code that is were IF and ELSE statements come in.
+If:
 This keyword works in manner of carrying out a statemnt when it(the statement) is true
 EG if the track is clear: then execute the statement orders(go forward)
 ELSE: 
@@ -42,8 +47,6 @@ if (track === "clear") {
     turnRight();
 } //goStraight and turnRight are functions
 /*
-This sort of code is called control flow. 
-We are controlling the flow of our code.
 So for our love calculator we can have alerts that come up on certain scores.
 */
 prompt("What is your name?");
@@ -55,6 +58,13 @@ if (love > 70) {
 } else {
     alert("Your Love Score Is " + love + "%")
 }
+/*-- The else statement can be written as:
+else {
+    alert("Your Love Score is " + love + "%. Find things that you have in common so that this increases your lovescore.")
+} 
+
+*/
+
 
 // COMPARATORS AND EQUALITY
 /* 
@@ -70,6 +80,22 @@ if (love > 70) {
 
  === make sure that the datatypes are the same. 
  == make sure the content inside the different datatypes are the same.
+
+ Example: 
+ var a = 1;
+ var b = "1";
+
+ if a === b {
+     console.log("yes");
+ } else {
+     console.log("no");
+ }; -------------------Since there is three equal signs, it will write no.
+
+ if a == b {
+     console.log("yes");
+ } else {
+     consoloe.log("no")
+ }; -------------------This will come out as yes because the content in both datatypes are the same.
 */
 
 // COMBINING COMPARATORS
@@ -89,6 +115,24 @@ if (love > 70) {
 
 } else {
     alert("Your Love Score Is " + love + "%" + ". You go togehter like water with oil.")
+}
+
+// BMI Calculator Advanced (IF/ELSE)
+
+function bmiCalculator(weight, height) {
+    var calculator = weight / (height * height);
+    if (calculator <= 18.5) {
+        return ("Your BMI is " + calculator + ", so you are underweight.");
+    }
+    if (calculator >= 18.5 && calculator <= 24.9) {
+        return ("Your BMI is " + calculator + ", so you have a normal weight.");
+    }
+    if (calculator >= 24.9) {
+        return ("Your BMI is " + calculator + ", so you are overweight.");
+    } else {
+        return calculator;
+    }
+    return interpretation;
 }
 /*
 Note To Self: Make sure to put () after (AND OR NOT).
@@ -141,7 +185,7 @@ When using this be aware that it can only push the data type at the end not at s
 That is not all.
 You can also remove the last item in the array by using .pop
 */
-// FIZZBUZZ Challengevar output = [];
+// FIZZBUZZ Challenge var output = [];
 var count = 1;
 
 function fizBuzz() {
@@ -162,4 +206,18 @@ function fizBuzz() {
 Keep in mind that the order of your if statements matter.
 If the first if statement is true it will skip the rest.
 **** Note **** When using % make sure that you equal it to 0 (3 % 3 === 0)
+*/
+
+//Challange Who is buying Lunch Today?
+
+/*
+names = [];
+
+names.push("Angela", "Ben", "Jenny", "Michael", "Chloe");
+var randomNo = Math.random();
+
+var nameplace = Math.floor(randomNo * names.length);
+
+return names[nameplace] + " is going to buy Lunch today";
+
 */
