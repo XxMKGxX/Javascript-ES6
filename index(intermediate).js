@@ -221,3 +221,34 @@ var nameplace = Math.floor(randomNo * names.length);
 return names[nameplace] + " is going to buy Lunch today";
 
 */
+
+//While Loops:
+/*  In order for the computer to continue with the FizzBuzz code without us having to type it in, we use loops
+--Inside the function key, we add:
+    while (count <= 100) {
+        ***inout if statements in here***
+    }
+--Similar to if statements, they have curly braces.
+-- while (something is true ) {
+    Do something about it.
+}
+--The while loop only works when the content found inside is correct. 
+-- while statments can also take in if/else statements and variables.
+*/
+
+// Challenge Bottles Of Beer
+
+var numberOfBottles = 99
+while (numberOfBottles >= 0) {
+    var bottleWord = "bottle";
+    if (numberOfBottles === 1) {
+        bottleWord = "bottles";
+    }
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+    console.log(numberOfBottles + " " + bottleWord + " of beer,");
+    console.log("Take one down, pass it around,");
+    numberOfBottles--;
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+}
+//This was an interesting challenge as it did not need an incrementation. Rather it took a decrementation.
+//Challenge: try to put bottle for the last number and remove beer on the wall.
